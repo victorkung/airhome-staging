@@ -1,0 +1,1182 @@
+#pdfFrame {
+   width: 1654px;
+height: 70%;
+width: auto;
+opacity: 0;
+position: absolute;
+   z-index: -500;
+background: #fff;
+overflow: scroll;
+}
+
+#pdfFrame h5{
+opacity: 0;
+}
+
+.emailCopy.mobile {
+font-size: 3.5vw;
+}
+
+
+#pdfHeader {
+width: 100%;
+display: block;
+position: relative;
+}
+
+#subscribeEmail {
+position: relative;
+}
+
+.loaderImage {
+    height: 30px;
+    position: absolute;
+    right: 125px;
+    top: 12px;
+display: none;
+}
+
+.pdfHeader {
+font-size: 30px;
+}
+
+.pdfPrice .calculatorPrice {
+font-size: 40px;
+}
+
+.pdfPrice .dollaSign {
+font-size: 24px;
+line-height: 24px;
+}
+
+#pdfPreview {
+display: none;
+position: absolute;
+height: 90%;
+width: 250px;
+overflow: scroll;
+}
+
+
+#pdfPrice {
+display: block;
+    float: left;
+    width: 500px;
+    margin-top: 30px;
+}
+
+#pdfFooter {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    border-top: solid 1px;
+    margin-top: 45px;
+}
+
+.pdfrowTitle {
+width: 61%;
+display: block;
+    float: left;
+font-size: 20px;
+}
+
+.fineprint {
+ font-size: 14px;
+    display: block;
+    padding-top: 20px;
+    color: #999;
+
+}
+
+
+#pdfClarify {
+font-size: 16px;
+}
+
+.pdfQTY {
+width: 100px;
+    display: inline-block;
+}
+
+.pdfUNIT {
+width: 200px;
+display: inline-block;
+}
+
+.pdfQTYrow {
+width: 100px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.pdfUNITrow {
+width: 200px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.pdfTOTALrow {
+ display: inline-block;
+    padding-left: 10px;
+}
+
+.pdfsecTitle {
+padding: 10px 15px;
+    display: block;
+    font-size: 29px;
+margin-top: 10px;
+}
+
+.pdfrowSummary {
+display: inline-block;
+    position: relative;
+font-size: 20px;
+}
+
+.pdfB {
+    position: absolute;
+    left: 59%;
+    padding-top: 3px;
+}
+
+#pdfMid {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.pdfRow {
+    margin: 0 15px;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    position: relative;
+    width: 96%;
+}
+
+.greyOn {
+
+}
+
+.pdfsecHeader {
+color: #fff;
+    background: #58a7d2;
+    padding: 5px 15px 7px;
+    border-radius: 15px;
+}
+.pdfHeaderPara {
+    font-size: 29px;
+    line-height: 32px;
+    padding-top: 25px;
+    display: block;
+    color: #555;
+
+}
+
+#pdfheaderLeft {
+width: 52%;
+display: block;
+position: relative;
+float: left;
+padding-left: 15px;
+}
+
+#pdfheaderRight {
+float: right;
+    width: 42%;
+}
+
+#pdfheaderLeft img {
+width: 80%;
+}
+
+calcbody {
+display: block;
+width: 100%;
+}
+
+input[type="checkbox"]:focus, input[type="checkbox"]{
+        outline:0;
+border: none;
+    }
+
+
+.configStereo {
+width: 380px;
+height: 202px;
+margin-bottom: 8px;
+display: block;
+}
+
+#detailsDrop input {
+width: 250px;
+}
+
+#commissioning {
+padding-top: 15px;
+}
+
+.addressSlide {
+display: none;
+}
+
+.nameSlide {
+display: none;
+}
+
+.noamp {
+background: url("./airhomeEmpty.png");
+background-size: cover;
+}
+.noamp.surround {
+background: url("./airhome1surround.png");
+background-size: cover;
+}
+
+.oneAmp {
+background: url("./airhome1stereo.png");
+background-size: cover;
+}
+
+#detailsDrop {
+margin-left: 10px;
+}
+
+.oneAmp.surround {
+background: url("./airhome1surround1stereo.png");
+background-size: cover;
+}
+
+.twoAmp {
+background: url("./airhome2stereo.png");
+background-size: cover;
+}
+
+.twoAmp.surround {
+background: url("./airhome1surround2stereo.png");
+background-size: cover;
+}
+
+.threeAmp {
+background: url("./airhome3stereo.png");
+background-size: cover;
+}
+
+.threeAmp.surround {
+background: url("./airhome1surround3stereo.png");
+background-size: cover;
+}
+
+.fourAmp {
+background: url("./airhome4stereo.png");
+background-size: cover;
+}
+
+.fourAmp.surround {
+background: url("./airhome1surround4stereo.png");
+background-size: cover;
+}
+
+form {
+margin-bottom: 1em;
+}
+
+.fa-times {
+    float: right;
+    margin-top: 4px;
+color: #9e9e9e;
+}
+
+.fa-times:hover {
+cursor: pointer;
+}
+
+.roomNameLeft, .detailsNameLeft {
+width: 85%;
+}
+
+.detailsNameLeft {
+width: auto;
+padding-right: 5px;
+}
+
+.bottomFloat {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    height: 155px;
+    box-shadow: 0 0 7px rgba(0,0,0,.3);
+}
+#pricing_calc {
+width: 100%;
+font-family: 'Lato', sans-serif;
+margin: 0 auto;
+color: #666;
+text-align: left;
+font-size: 18px;
+}
+
+.pricingCalcDiv {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+padding: 20px 0 0;
+}
+
+.notAllowedSurround {
+background-image: url('switch_v1_off_grey.png') !important;
+}
+
+calcbody a {
+text-decoration: none;
+color: #54a6d4;
+}
+
+#currency_switch {
+color: #9e9e9e;
+font-size: 16px;
+margin: 10px;
+display: block;
+}
+
+.currencySelect {
+border: 0;
+background: none;
+color: #9e9e9e;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+}
+
+option { 
+padding: 0 !important;
+border: 0;
+background: none;
+color: #9e9e9e;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+} 
+
+#leftPanel {
+width: 380px;
+float: left;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+#main_panels {
+display: block;
+}
+
+.checkbox {
+display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+}
+
+.checkboxOuter {
+display: inline-block;
+height: 25px;
+width: 100%;
+padding-bottom: 1px;
+
+}
+
+.detailsDrop .checkboxOuter {
+margin-left: 20px;
+}
+
+.checkboxInner {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 32px;
+    color: #9e9e9e;
+}
+
+.checkboxOuter img {
+padding: 0 5px;
+}
+
+.leftPara {
+    font-size: 22px;
+    line-height: 25px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.leftNote {
+color: #9e9e9e;
+    font-size: 14px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+#metricChange {
+padding-bottom: 10px;
+}
+
+.calcLabel {
+padding-bottom: 5px;
+display: block;
+}
+
+#wireless {
+display: block;
+}
+
+.leftSection {
+padding-bottom: 25px;
+display: block;
+}
+
+.inputLabel {
+color: #9e9e9e;
+font-size: 14px;
+}
+
+
+
+input {
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+color: #666;
+padding: 5px;
+}
+
+
+#priceDisplay {
+background: #58a7d2;
+padding: 20px;
+border-radius: 15px;
+color: #fff;
+}
+
+.dollaSign, #cents {
+font-size: 18px;
+vertical-align: top;
+margin-top: 2px;
+}
+
+.calculatorPrice {
+font-size: 30px;
+vertical-align: top;
+line-height: 28px;
+}
+
+::-webkit-input-placeholder {
+color: #
+}
+
+.currencyName {
+margin-left: 10px;
+vertical-align: bottom;
+}
+
+.emailButton {
+color: #54a6d4;
+}
+
+.emailCopy {
+padding-left: 20px;
+padding-top: 10px;
+display: block;
+}
+
+.clarification {
+border-top: solid 1px #9e9e9e;
+padding: 10px 0;
+color: #9e9e9e;
+font-size: 14px;
+font-weight: normal;
+}
+
+.zipcodeSlide {
+display: none;
+margin-top: 10px;
+}
+
+
+
+.checkboxOuter img:hover {
+cursor: pointer;
+}
+
+#rightPanel {
+width: 710px;
+float: right;
+padding-left: 0;
+margin-top: 17px;
+margin-bottom: 50px;
+}
+
+.roomBox {
+width: 340px;
+background: #54a6d4;
+display: block;
+padding: 20px;
+border-radius: 15px;
+position: relative;
+color: #fff;
+}
+
+.detailsBox {
+width: 100%;
+background: none;
+display: block;
+padding: 20px 20px 5px;
+border-radius: 15px;
+position: relative;
+color: #666;
+}
+
+.roomBox:hover, .detailsBox:hover {
+cursor: pointer;
+}
+
+.roomnameFormat, .detailsnameFormat {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+    
+}
+
+.roomRightButton {
+    float: right;
+    padding-left: 5px;
+}
+
+.roomDrop {
+display: block;
+width: 310px;
+margin: 0 0 0 15px;
+border: none;
+border-top: none;
+padding: 20px;
+}
+
+.detailsDrop {
+display: none;
+width: 100%;
+margin: 0;
+border: none;
+border-top: none;
+padding: 10px;
+padding-top: 20px;
+}
+
+.roomName {
+width: 260px;
+border: solid 1px #bbb;
+border-radius: 8px;
+background: #eee;
+padding: 10px;
+}
+
+.surroundOption div{
+width: 135px;
+float: left;
+padding-bottom: 18px;
+}
+
+.stereoOption, .surroundOption #rearSpeaks {
+padding-bottom: 15px;
+}
+
+.centerTitle {
+display: block;
+
+text-align: left;
+padding-bottom: 4px;
+}
+
+.AppleTVSection, .subwooferSection2 {
+padding-top: 15px;
+}
+
+.stereoSurround {
+padding-bottom: 50px;
+}
+
+.speakersSection {
+padding-top: 10px;
+}
+
+#roomdrop .checkboxOuter, #detailsdrop .checkboxOuter  {
+text-align: left;
+}
+
+.surroundOption, .speakersSection, .subwooferSection1 {
+display: none;
+}
+
+.additionalButton {
+color: #9e9e9e;
+font-size: 18px;
+display: block;
+}
+
+.additionalButton:hover {
+cursor: pointer;
+}
+
+.deleteRoom {
+float: right;
+font-size: 14px;
+color: #9e9e9e;
+display: block;
+position: relative;
+bottom: 5px;
+}
+
+.stereoSurround {
+position: relative;
+right: -2px;
+}
+
+.roomRightButton {
+padding-top: 6px;
+}
+
+a:hover {
+cursor: pointer;
+}
+
+.addRoom:hover {
+cursor: pointer;
+}
+
+.addRoom {
+width: 300px;
+background: #fff;
+display: block;
+float: right;
+padding: 20px;
+border-radius: 15px;
+height: 30px;
+line-height: 30px;
+font-size: 18px;
+}
+
+.deleteRoom {
+display: none;
+}
+
+.roomContainer {
+    display: block;
+    float: left;
+margin: 5px;
+}
+
+.detailsContainer {
+    display: block;
+margin: 5px 0;
+}
+
+#pdfPreview h5 {
+margin: 10px 0;
+
+}
+
+
+.checkboxLabel input[type="checkbox"] {display:none;}
+
+.checkboxLabel .checkboxSpan {
+    display:inline-block;
+    width:37px;
+    height:25px;
+    background: url("switch_v1_off.png");
+    vertical-align:middle;
+    margin:5px 4px;
+    background-repeat: no-repeat !important;
+    background-position: center center  !important;
+    background-size: contain  !important;
+
+}
+.checkboxLabel :checked + .checkboxSpan {
+    background: url("switch_v1_on.png");
+}
+
+
+
+.checkboxSpan:hover {
+cursor: pointer;
+}
+
+
+.infoHidden {
+font-family: Lato,'Helvetica Neue',sans-serif !important;
+}
+
+
+.mobile {
+display: none !important;
+}
+
+.roomnameArrow, .detailsnameArrow {
+display: inline-block;
+padding-left: 0;
+font-size: 20px;
+padding-bottom: 3px;
+}
+
+.confirmationBox {
+display: none;
+width: 300px;
+height: 120px;
+z-index: 100;
+background: #eee;
+color: #444;
+border-radius: 25px;
+position: absolute;
+left: 20px;
+top: 80px;
+}
+
+.roomRightButton i {
+position: relative;
+}
+
+.confirmationInternal {
+padding: 25px;
+}
+
+.confirmLabel {
+text-align: center;
+display: block;
+}
+
+.confButton {
+font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: -.5px;
+}
+
+.confButton:hover {
+text-shadow: 0 0 7px #fff;
+}
+
+.rightButton {
+    float: right;
+    padding-right: 50px;
+    color: #fc33f3;
+}
+
+.leftButton {
+float: left;
+    padding-left: 50px;
+    color: #54a6d4;
+} 
+
+.infoHidden {
+display: none;
+width: 300px;
+height: auto;
+background: rgba(255,255,255,.9);
+padding: 20px;
+color: #444;
+font-size: 14px;
+line-height: 17px;
+position: absolute;
+border-radius: 15px;
+border: solid 1px #bbb;
+top: -10px;
+z-index: 200;
+right: -170px;
+}
+
+.infoHide {
+padding-left: 5px;
+position: relative;
+color: #aaa;
+}
+
+.infoHide:hover .infoHidden{
+display: block;
+}
+
+#emailWindow {
+display: none;
+background: rgba(255,255,255,.5);
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 200; 
+}
+
+#emailPopup {
+width: 340px;
+height: auto;
+background: #fff;
+border-radius: 15px;
+z-index: 500;
+margin: 10% auto 0;
+box-shadow: 0 2px 6px rgba(0,0,0,.4);
+padding: 25px;
+
+}
+
+.popUpTitle {
+font-size: 16px;
+text-align: left;
+display: block;
+}
+
+#emailPopup .emailSend {
+margin: 0;
+width: 100%;
+}
+
+#newsletterInput {
+display: none;
+}
+
+.coolButton {
+border: none;
+padding: 10px 15px;
+color: #fff;
+font-size: 16px;
+background: #54a6d4;
+border-radius: 15px;
+text-align: center;
+margin: 20px auto 0;
+display:block;
+}
+
+
+.coolbutton2 {
+border: none;
+padding: 10px 15px;
+color: #fff;
+font-size: 16px;
+background: #54a6d4;
+border-radius: 15px;
+text-align: center;
+margin: 20px auto 0;
+display: block;
+}
+
+.coolbutton3 {
+border: none;
+padding: 10px 15px;
+color: #fff;
+font-size: 16px;
+background: #54a6d4;
+border-radius: 15px;
+text-align: center;
+margin: 20px auto 0;
+display: block;
+}
+
+.coolButton:hover {
+cursor: pointer;
+}
+
+#subscribeEmail {
+text-align: left;
+}
+
+#squarefeet {
+border-radius: 8px;
+background: #eee;
+padding: 10px;
+border: solid 1px #bbb;
+}
+
+#emailSend {
+border-radius: 8px;
+background: #eee;
+padding: 10px;
+border: solid 1px #bbb;
+}
+
+
+#zipcode, #configName, #addressConfig {
+margin-top: 4px;
+border-radius: 8px;
+    background: #eee;
+    padding: 10px;
+    border: solid 1px #bbb;
+    }
+
+
+@media screen and (min-width: 756px) and (max-width: 1115px) {
+
+#pricing_calc {
+width: 95%;
+margin: 0 2.5%;
+}
+
+#pdfPreview h5 {
+opacity: 0;
+display: none;
+}
+
+#pdfPreview {
+display: none !important;
+opacity: 0;
+}
+
+#rightPanel {
+width: 50%;
+padding-left: 0;
+}
+
+.roomContainer {
+float: right;
+}
+
+#leftPanel {
+width: 50%;
+
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.mobile {
+display: none !important;
+}
+
+
+}
+
+@media (min-width: 1156px){
+#pdfPreview {
+position: absolute;
+    height: 80%;
+    width: 70%;
+    max-width: 700px;
+    right: 50px;
+    top: 10%;
+background: #fff;
+    padding: 25px;
+    z-index: -500;
+}
+#pdfPreview #pdfFrame {
+opacity: 1 !important;
+padding: 25px;
+    overflow: scroll;
+    overflow-y: scroll;
+-moz-box-shadow:    inset 0 0 10px rgba(0,0,0,.3);
+   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.3);
+   box-shadow:         inset 0 0 10px rgba(0,0,0,.3);
+}
+
+#pdfPreview .pdfRow {
+width: 96% !important;
+}
+
+#emailPopup {
+margin: 3% 50% 0 50px;
+}
+
+}
+
+@media only screen and (max-device-width: 755px), (max-width: 755px){
+
+
+#emailPopup {
+    margin-top: 25px;
+    zoom: .8;
+z-index: 1000;
+}
+
+.popUpTitle {
+font-size: 16px !important;
+}
+
+#pdfPreview h5 {
+display:  none;
+}
+
+
+.detailsNameLeft {
+width: 75%;
+font-size: 20px;
+}
+
+
+#main_panels {
+margin: 50px 0 20px;
+}
+
+.configStereo {
+width: 350px;
+height: 185px;
+}
+
+.roomDrop, .detailsDrop {
+font-size: .9em;
+}
+
+#pricing_calc {
+position: relative;
+top: -50px;
+}
+
+.bottomFloat {
+display: block;
+}
+.roomBox, .detailsBox {
+width: 100%;
+}
+
+.roomSection {
+margin: 5px 0;
+}
+
+.roomDrop, .detailsDrop {
+width: 87%;
+}
+
+.addRoom {
+float: left;
+width: 85%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.leftSection {
+padding-bottom: 20px;
+}
+
+.mobile {
+display: initial !important;
+}
+ 
+
+#pricing_calc {
+width: 95%;
+margin: 0 2.5%;
+}
+
+#main_panels {
+float: left;
+}
+
+#leftPanel {
+width: 100%;
+height: initial;
+position: relative;
+margin-bottom: 0;
+}
+
+.desktop {
+display: none !important;
+}
+
+.clarification {
+display: block;
+margin-top: 30px;
+width: 100%;
+float: left;
+padding-bottom: 20px;
+}
+
+#rightPanel {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-left: 0;
+}
+
+#priceDisplay.mobile {
+position:fixed;
+bottom:75px;
+left: 2.5%;
+margin: 0 auto;
+width: 95%;
+}
+
+#currency_switchMOB {
+position: fixed;
+bottom: 40px;
+left: 20px;
+}
+ 
+.emailCopy.mobile {
+float: left;
+position:fixed;
+bottom:10px;
+width: 100%;
+text-align: center;
+left:0;
+}
+
+#roomSection {
+float: left; 
+width: 100%;
+}
+
+.roomContainer, .detailsContainer {
+float: left;
+width: 86%;
+margin: 5px 0;
+    position: relative;
+}
+
+
+.addRoom {
+width: 95%;
+}
+
+.calculatorPrice { 
+font-size: 2em;
+}
+
+.surroundOption div {
+width: initial;
+}
+
+.splitColumn1 {
+width: 50% !important;
+display: block;
+}
+
+.splitColumn2 {
+width: 50% !important;
+display: block;
+}
+
+.roomName {
+width: 100%;
+}
+
+.surroundOption .checkboxInner {
+font-size: .8em;
+}
+
+.infoHidden {
+width: 75vw;
+position: fixed;
+right: 10vw;
+left: 10vw;
+top: 20vh;
+}
+
+#rightPanel {
+overflow: hidden;
+}
+
+}
+
+input.regularText {
+border-radius: 8px;
+background: #eee;
+padding: 10px;
+border: solid 1px #bbb;
+    margin-top: 20px;
+    width: 100%;
+}
