@@ -770,6 +770,24 @@ attachment1: "../Airhome_Configuration.pdf"
 
 }
   
+$(".coolbutton2").click( function() {
+$(".loaderImage").fadeIn(500);
+preparePDF();
+
+var pdfToConvert = "<html><body><link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>" + $("#pdfFrame").html() + "</body></html>";
+$.post( "convertPDF.php", { data: pdfToConvert } );
+
+setTimeout( function() {
+
+    window.location.href = './Airhome_Configuration.pdf';
+
+}, 2500);
+setTimeout( function() {$("#emailWindow").hide();
+}, 2000);
+});
+
+
+
 $(".coolButton").click( function() {
 preparePDF();
     sendEmail();

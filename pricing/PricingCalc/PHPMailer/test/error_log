@@ -1,0 +1,8 @@
+[15-May-2016 17:50:05 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/phpmailerLangTest.php on line 23
+[15-May-2016 21:41:00 UTC] PHP Warning:  file_get_contents(../examples/contents.html): failed to open stream: No such file or directory in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/test_callback.php on line 44
+[16-May-2016 09:30:04 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/phpmailerTest.php on line 23
+[22-May-2016 02:43:50 UTC] PHP Warning:  require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/bootstrap.php on line 2
+[22-May-2016 02:43:50 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/bootstrap.php on line 2
+[22-May-2016 02:45:14 UTC] PHP Warning:  file_get_contents(../examples/contents.html): failed to open stream: No such file or directory in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/test_callback.php on line 44
+[22-May-2016 02:45:32 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/phpmailerTest.php on line 23
+[22-May-2016 02:46:42 UTC] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home/airhome/public_html/pricing/PricingCalc/PHPMailer/test/phpmailerLangTest.php on line 23

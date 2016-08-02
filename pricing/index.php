@@ -64,26 +64,11 @@
   <link rel="stylesheet" type="text/css" href="./PricingCalc/calc_style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.0.0/dist/sheetrock.min.js"></script>
-  
   <?php include 'urlEncoding.php'; ?>
 
 
 <script>
-    function downloadPDF() {
-$(".loaderImage").fadeIn(500);
-preparePDF();
 
-var pdfToConvert = "<html><body><link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>" + $("#pdfFrame").html() + "</body></html>";
-$.post( "convertPDF.php", { data: pdfToConvert } );
-
-setTimeout( function() {
-
-    window.location.href = './Airhome_Configuration.pdf';
-
-}, 2500);
-setTimeout( function() {$("#emailWindow").hide();
-}, 2000);
-}
 
 $(function(){
 
@@ -280,38 +265,38 @@ font-size: 14px;">Square Feet:&nbsp;</span><span class="pdfrowContent pdfFeet"><
   <div class="body-container">
     <header class="row">
       <div class="container">
-        <div class="col-xs-6 col-sm-3"><a href="../"><img src="../images/header/airhome-logo.png" width="225px" class="logo"></a></div>
+        <div class="col-xs-6 col-sm-3"><a href="../"><img src="https://airhome.io/images/header/airhome-logo.png" width="225px" class="logo"></a></div>
         <nav class="desktop-nav col-xs-6 col-sm-9">
           <ul>
             <li><a href="#" id="how-it-works">How It Works</a></li>
             <li><a href="#" id="builder-resources">Builder Resources</a></li>
             <li><a href="../pricing/">Pricing</a></li>
             <li><a href="#" id="support">Support</a></li>
-            <li><a href="http://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
+            <li><a href="https://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
             <li><a href="#" id="store">Store</a></li>
           </ul>
         </nav>
-        <nav class="mobile-nav col-xs-6 col-sm-9"><a href="../" class="mobile-nav-icon"><img src="../images/header/menu-icon.png"></a></nav>
+        <nav class="mobile-nav col-xs-6 col-sm-9"><a href="../" class="mobile-nav-icon"><img src="https://airhome.io/images/header/menu-icon.png"></a></nav>
         <ul class="mobile-nav-popup row"><img src="../images/header/airhome-logo-white.png" class="logo-white"><span id="close-btn">X</span>
           <div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8">
             <li class="mobile-nav-link"><a href="#" id="mobile-how-it-works">How It Works <span>&#9660;</span></a>
               <ul>
-                <li><a href="../how-it-works/product-features/">Product Features</a></li>
-                <li><a href="../how-it-works/wifi-network/">Wi-Fi Network</a></li>
-                <li><a href="../how-it-works/apps-airplay/">Apps & AirPlay®</a></li>
+                <li><a href="../product-features/">Product Features</a></li>
+                <li><a href="../wifi-network/">Wi-Fi Network</a></li>
+                <li><a href="../apps-airplay/">Apps & AirPlay®</a></li>
               </ul>
             </li>
             <li class="mobile-nav-link"><a href="#" id="mobile-builder-resources">Builder Resources <span>&#9660;</span></a>
               <ul>
-                <li><a href="../homebuilder-resources/why-airhome/">Why Airhome?</a></li>
-                <li><a href="../homebuilder-resources/partner-program/demo-systems/">Demo Systems & POP Displays</a></li>
-                <li><a href="../homebuilder-resources/partner-program/">Partner Program</a></li>
+                <li><a href="../why-airhome/">Why Airhome?</a></li>
+                <li><a href="../demo-system/">Demo Systems & POP Displays</a></li>
+                <li><a href="../partner-programs/">Partner Program</a></li>
               </ul>
             </li>
             <li class="mobile-nav-link"><a href="../pricing/">Pricing</a></li>
             <li class="mobile-nav-link"><a href="#" id="mobile-support">Support<span>&#9660;</span></a>
               <ul>
-                <li><a href="http://airhome.zendesk.com" target="_blank">Support</a></li>
+                <li><a href="https://airhome.zendesk.com" target="_blank">Support</a></li>
                 <li>
                 </li>
                 <li><a href="https://airhome.typeform.com/to/PPwjef" data-mode="1" target="_blank" class="typeform-share link">
@@ -319,11 +304,11 @@ font-size: 14px;">Square Feet:&nbsp;</span><span class="pdfrowContent pdfFeet"><
                     </a></li>
               </ul>
             </li>
-            <li class="mobile-nav-link"><a href="http://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
+            <li class="mobile-nav-link"><a href="https://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
             <li class="mobile-nav-link"><a href="#" id="mobile-store">Store<span>&#9660;</span></a>
               <ul>
-                <li><a href="http://airhome.myshopify.com" target="_blank">Shopify US</a></li>
-                <li><a href="http://airhomeca.myshopify.com" target="_blank">Shopify CAN</a></li>
+                <li><a href="https://airhome.myshopify.com" target="_blank">Shopify US</a></li>
+                <li><a href="https://airhomeca.myshopify.com" target="_blank">Shopify CAN</a></li>
               </ul>
             </li>
           </div>
@@ -332,28 +317,28 @@ font-size: 14px;">Square Feet:&nbsp;</span><span class="pdfrowContent pdfFeet"><
     </header>
     <div id="how-it-works-dropdown" class="header-dropdown row">
       <div class="container">
-        <div class="col-xs-4"><a href="../how-it-works/product-features/"><img src="../images/header/icon_product_features.png"><span class="subnav-title">Product Features</span><span class="subnav-subtitle">Wired speakers, wireless control.</span></a></div>
-        <div class="col-xs-4"><a href="../how-it-works/wifi-network/"><img src="../images/header/icon_wifi_network.png"><span class="subnav-title">Wi-Fi Network</span><span class="subnav-subtitle">Wi-Fi network setup info</span></a></div>
-        <div class="col-xs-4"><a href="../how-it-works/apps-airplay/"><img src="../images/header/icons_apps_airplay.png"><span class="subnav-title">Apps & AirPlay®</span><span class="subnav-subtitle">Plays from your favourite apps</span></a></div>
+        <div class="col-xs-4"><a href="../product-features/"><img src="../images/header/icon_product_features.png"><span class="subnav-title">Product Features</span><span class="subnav-subtitle">Wired speakers, wireless control.</span></a></div>
+        <div class="col-xs-4"><a href="../wifi-network/"><img src="../images/header/icon_wifi_network.png"><span class="subnav-title">Wi-Fi Network</span><span class="subnav-subtitle">Wi-Fi network setup info</span></a></div>
+        <div class="col-xs-4"><a href="../apps-airplay/"><img src="../images/header/icons_apps_airplay.png"><span class="subnav-title">Apps & AirPlay®</span><span class="subnav-subtitle">Plays from your favourite apps</span></a></div>
       </div>
     </div>
     <div id="builder-resources-dropdown" class="header-dropdown row">
       <div class="container">
-        <div class="col-xs-4"><a href="../homebuilder-resources/why-airhome/"> <img src="../images/header/why_airhome_icon.png"><span class="subnav-title">Why Airhome?</span><span class="subnav-subtitle">Delight homes buyers with installed audio</span></a></div>
-        <div class="col-xs-4"><a href="../homebuilder-resources/partner-program/demo-systems/"><img src="../images/header/icon_product_features.png"><span class="subnav-title">Demo Systems & POP Displays</span><span class="subnav-subtitle">Sales tools to help you succeed</span></a></div>
-        <div class="col-xs-4"><a href="../homebuilder-resources/partner-program/"><img src="../images/header/partner_icon.png" style="width: 125px; margin-top: 21px"><span class="subnav-title">Partner Program</span><span class="subnav-subtitle">Learn about the Partner Program</span></a></div>
+        <div class="col-xs-4"><a href="../why-airhome/"> <img src="../images/header/why_airhome_icon.png"><span class="subnav-title">Why Airhome?</span><span class="subnav-subtitle">Delight homes buyers with installed audio</span></a></div>
+        <div class="col-xs-4"><a href="../demo-system/"><img src="../images/header/icon_product_features.png"><span class="subnav-title">Demo Systems & POP Displays</span><span class="subnav-subtitle">Sales tools to help you succeed</span></a></div>
+        <div class="col-xs-4"><a href="../partner-programs/"><img src="../images/header/partner_icon.png" style="width: 125px; margin-top: 21px"><span class="subnav-title">Partner Program</span><span class="subnav-subtitle">Learn about the Partner Program</span></a></div>
       </div>
     </div>
     <div id="support-dropdown" class="header-dropdown row">
       <div class="container">
-        <div class="col-xs-6"><a href="http://airhome.zendesk.com" target="_blank"> <img src="../images/header/support_icon.png"><span class="subnav-title">Support</span><span class="subnav-subtitle">Visit the Airhome support center</span></a></div>
-        <div class="col-xs-6"><a href="https://airhome.typeform.com/to/PPwjef" data-mode="1" target="_blank" class="typeform-share link"><img src="../images/header/phone_support.png"><span class="subnav-title">Contact Sales</span><span class="subnav-subtitle">(844) 936-6842</span></a></div>
+        <div class="col-xs-6"><a href="https://airhome.zendesk.com" target="_blank"> <img src="../images/header/support_icon.png"><span class="subnav-title">Support</span><span class="subnav-subtitle">Visit the Airhome support center</span></a></div>
+        <div class="col-xs-6"><a href="https://airhome.typeform.com/to/PPwjef" data-mode="1" target="_blank" class="typeform-share link"><img src="../images/header/phone_support.png"><span class="subnav-title">Contact Sales</span><span class="subnav-subtitle">(780) 809-1089</span></a></div>
       </div>
     </div>
     <div id="store-dropdown" class="header-dropdown row">
       <div class="container">
-        <div class="col-xs-6"><a href="http://airhome.myshopify.com" target="_blank"> <img src="../images/header/store_icon.png"><span class="subnav-title">Shopify US</span></a></div>
-        <div class="col-xs-6"><a href="http://airhomeca.myshopify.com" target="_blank"><img src="../images/header/store_icon.png"><span class="subnav-title">Shopify CAN</span></a></div>
+        <div class="col-xs-6"><a href="https://airhome.myshopify.com" target="_blank"> <img src="../images/header/store_icon.png"><span class="subnav-title">Shopify US</span></a></div>
+        <div class="col-xs-6"><a href="https://airhomeca.myshopify.com" target="_blank"><img src="../images/header/store_icon.png"><span class="subnav-title">Shopify CAN</span></a></div>
       </div>
     </div>
     <main>
@@ -362,20 +347,17 @@ font-size: 14px;">Square Feet:&nbsp;</span><span class="pdfrowContent pdfFeet"><
           <div class="container">
             <h4 style="color: white"> STARTING @
             </h4>
-            <h4 style="color: white"> $799.00<span> AIRHOME PANEL</span>
+            <h4 style="color: white"> $580.00<span> AIRHOME PANEL</span>
             </h4>
-            <h4 style="color: white"> $499.00<span> AIRHOME AMP40</span>
+            <h4 style="color: white"> $380.00<span> AIRHOME AMP40</span>
             </h4>
             <h5 style="color: white" class="subtitle">Every Airhome panel needs Amps and speakers for activation.
-            </h5><img src="../images/pricing/airhome-panel-2.png">
+            </h5><img src="../images/pricing/airhome-panel.png">
             <p style="color: #aaa" class="text">All pricing shown is suggested retail pricing.  Pricing does not include speakers, speaker cable, wireless access points or installation.  Please contact a qualified contractor to receive installation pricing for an Airhome system in your home. 
             </p>
           </div>
         </div>
       </div>
-
-
-
       <div style="background-color:#58a7d2" class="banner row">
         <div class="container">
           <div class="col-xs-offset-0 col-xs-12 col-sm-offset-1 col-sm-10 content-wrapper">
@@ -460,7 +442,7 @@ if($oldvar == 1){if(isset($_GET["address"])){echo("checked");}}?>><span class="c
                 <input id="newsletterInput" name="cm-eldit-eldit" placeholder="Join our mailing list" class="email-input">
                 
               </form>
-              <a class="coolButton">Send<a href="javascript:downloadPDF()" class="coolbutton2">Download a PDF</a>
+              <a class="coolButton">Send</a><a class="coolbutton2">Download a PDF</a>
               <a class="coolbutton3 shopifyButton">Add Configuration to Cart</a><br>
               <span class="centerTitle">Bookmark or email the link below to save this configuration</span>
               <input type="text" id="sharingURL" class="regularText" readonly><br><span class="success"></span>
@@ -556,33 +538,6 @@ echo('  <option value="USD">Price in USD</option><option value="CAD">Price in CA
           </div>
         </div>
       </div>
-
-
-
-       <div style="background-color: #58a7d2" class="two-col-panel row variant-1">
-        <div class="container ta-left ta-mobile-left">
-          <h1 style="color: white" class="title-middle">
-          </h1>
-          <div class="col-xs-12 col-md-6 two-col">
-            <div class="img-wrapper"><img src="../images/pricing/rooms.png" alt="" style="margin-top: 0px; margin-bottom: 0px" class="two-col-img">
-              <figcaption style="color: white">
-              </figcaption>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 two-col">
-            <div style="color: white; position: relative; padding-top: 15px; padding-bottom: px" class="text">
-              <h2 style="color: white">Up To 5 Rooms Per Airhome Panel
-              </h2>
-              <p>When you’re building a new home or renovating an existing home, you want your customers to get up and running without a hitch. Airhome Commissioning Agents can connect with your customers in their home to setup the WiFi and show them what Airhome can do.
-              </p>
-              <p class="small-text">*Each Airhome panel requires at least 1 x AMP40, speakers, and a Wi-Fi network for operation.
-              </p>
-              <p class="small-text-italic">
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div style="background-color: white" class="two-col-panel row variant-1">
         <div class="container ta-left ta-mobile-left">
           <h1 style="color: #aaa" class="title-middle">
@@ -625,44 +580,38 @@ echo('  <option value="USD">Price in USD</option><option value="CAD">Price in CA
                 <div class="question-answer-container">
                   <p style="color: #888" id="question-1" class="question">How do I buy Airhome products and packages?
                   </p>
-                  <p style="color: #888" id="answer-1" class="answer">As a new home buyer, please consult your local home builder for details. If you're a home builder or contractor, please <a href="https://airhome.typeform.com/to/fc6TVN" data-mode="1" target="_blank" class="typeform-share" style="color: rgb(252, 51, 243)">Contact Us</a> to join the <a href="/homebuilder-resources/partner-program/" style="color: rgb(252, 51, 243)">Airhome Partner Program</a>. Do-it-yourself renovation and remodeling enthusiasts may purchase Airhome products online in either of the <a href="https://airhomeca.myshopify.com" style="color: rgb(252, 51, 243)">Canadian</a> or <a href="https://airhome.myshopify.com" style="color: rgb(252, 51, 243)">United States</a> Shopify online stores.
+                  <p style="color: #888" id="answer-1" class="answer">As a new home buyer, please consult your local home builder for details. If you're a home builder or contractor, please <a href="https://airhome.typeform.com/to/fc6TVN" data-mode="1" target="_blank" class="typeform-share" style="color: rgb(252, 51, 243)">Contact Us</a> to join the <a href="/[artner-programs/" style="color: rgb(252, 51, 243)">Airhome Partner Program</a>. Do-it-yourself renovation and remodeling enthusiasts may purchase Airhome products online in either of the <a href="https://airhomeca.myshopify.com" style="color: rgb(252, 51, 243)">Canadian</a> or <a href="https://airhome.myshopify.com" style="color: rgb(252, 51, 243)">United States</a> Shopify online stores.
                   </p>
                 </div>
                 <div class="question-answer-container">
                   <p style="color: #888" id="question-2" class="question">Do I need to wire speakers around my house to use Airhome?
                   </p>
-                  <p style="color: #888" id="answer-2" class="answer">Yes. You will need concealed in-wall speaker cable that connects your in-wall or in-ceiling speakers to your Airhome panel. Many new homes constructed over the last 10-15 years have been built with speaker wiring bundled within 'structured wiring' in the walls. Speaker wire is easiest to run during new construction, but it's also easy to install during home remodeling or renovation as well, at the same time you are installing new lights and electrical fixtures.
-                  </p>
+                  <p style="color: #888" id="answer-2" class="answer"><b>Yes.</b> You will need concealed in-wall speaker cable that connects your in-wall or in-ceiling speakers to your Airhome panel. Many new homes constructed over the last 10-15 years have been built with speaker wiring bundled within "structured wiring" in the walls. Speaker wire is easiest to run during new construction, but it's also easy to install during home remodeling or renovation as well, at the same time you are installing new lights and electrical fixtures.</p>
                 </div>
                 <div class="question-answer-container">
                   <p style="color: #888" id="question-3" class="question">Can I watch movies and listen to them with Airhome or is it just for music?
                   </p>
-                  <p style="color: #888" id="answer-3" class="answer">Yes! Airhome works with Apple's AirPlay® on everything from iPhone® and iPad® to Apple TV® and Apple Watch®. You can watch movies and TV shows on your Apple TV in your Living Room and listen in surround sound with Airhome. You can watch movies on your laptop, iPhone or iPad and listen with Airhome too! Some great apps with HD video and huge selections include Netflix® and HBO®. Various live TV programs are also available in different countries so you can watch everything from CNN® news to NHL® hockey.
-                  </p>
+                  <p style="color: #888" id="answer-3" class="answer"><b>Yes!</b> Airhome works with Apple's AirPlay&reg; on everything from iPhone® and iPad&reg; to Apple TV&reg; and Apple Watch&reg;. You can watch movies and TV shows on your Apple TV in your Living Room and listen in surround sound with Airhome. You can watch movies on your laptop, iPhone or iPad and listen with Airhome too! Some great apps with HD video and huge selections include Netflix&reg; and HBO&reg;. Various live TV programs are also available in different countries so you can watch everything from CNN&reg; news to NHL&reg; hockey.</p>
                 </div>
                 <div class="question-answer-container">
-                  <p style="color: #888" id="question-4" class="question">Does Airhome work with Android?
+                  <p style="color: #888" id="question-8" class="question">Does Airhome work with Android?
                   </p>
-                  <p style="color: #888" id="answer-4" class="answer">Yes, Airhome can work with Android too. Airhome uses Wi-Fi® to connect to mobile phones, tablets, and computers for streaming music or movie audio. There are always new apps being developed for the Google Play Store that can be used to play music wireless with Airhome.
-                  </p>
+                  <p style="color: #888" id="answer-8" class="answer">Yes, Airhome can work with Android too. Airhome uses Wi-Fi&reg; to connect to mobile phones, tablets, and computers for streaming music or movie audio. There are always new apps being developed for the Google Play Store that can be used to play music wireless with Airhome.</p>
                 </div>
                 <div class="question-answer-container">
-                  <p style="color: #888" id="question-5" class="question">Why is Airhome wired, can it just be a wireless speaker?
+                  <p style="color: #888" id="question-4" class="question">Why is Airhome wired, can it just be a wireless speaker?
                   </p>
-                  <p style="color: #888" id="answer-5" class="answer">Airhome uses speaker wire to maintain a quality amplified audio connection. The Airhome Panel is conveniently located out-of-sight somewhere in the home and intentionally integrated within the home infurstructure so that it does not take up countertop space in the kitchen or shelving space in the living room. That way it won't require dusting either! Besides, whether it's a power wire for a traditional 'wireless speaker' or speaker wire for Airhome, every audio system needs to be wired. We just prefer quality sound and less clutter over traditional docking stations or portable speakers, so we chose speaker wire and wired speakers to maintain the highest quality possible.
-                  </p>
+                  <p style="color: #888" id="answer-4" class="answer">Airhome uses speaker wire to maintain a quality amplified audio connection. The Airhome Panel is conveniently located out-of-sight somewhere in the home and intentionally integrated within the home infurstructure so that it does not take up countertop space in the kitchen or shevling space in the living room. That way it won't require dusting either! Besides, whether it's a power wire for a traditional 'wireless speaker' or speaker wire for Airhome, every audio system needs to be wired. We just prefer quality sound and less clutter over traditional docking stations or portable speakers, so we chose speaker wire and wired speakers to maintain the highest quality possible.</p>
                 </div>
                 <div class="question-answer-container">
-                  <p style="color: #888" id="question-6" class="question">Can I use my cable TV box with Airhome?
+                  <p style="color: #888" id="question-5" class="question">Can I use my cable TV box with Airhome?
                   </p>
-                  <p style="color: #888" id="answer-6" class="answer">No, not at this time. The traditional cable boxes provided by cable companies do not currently output Apple's AirPlay® wireless audio over Wi-Fi®, therefore they cannot connect to Airhome at present. But you can add an Apple TV® to any TV to enable audio output that is compatible with Airhome. <a href="https://www.apple.com/tv/" style="color: rgb(252, 51, 243)">Learn more &gt;</a>
-                  </p>
+                  <p style="color: #888" id="answer-5" class="answer">No, not at this time. The traditional cable boxes provided by cable companies do not currently output Apple's AirPlay&reg; wireless audio over Wi-Fi&reg;, therefore they cannot connect to Airhome at present. But you can add an Apple TV&reg; to any TV to enable audio output that is compatible with Airhome. <a href="https://www.apple.com/tv/" style="color: rgb(252, 51, 243)">Learn more ></a></p>
                 </div>
                 <div class="question-answer-container">
                   <p style="color: #888" id="question-7" class="question">What is the warranty for Airhome?
                   </p>
-                  <p style="color: #888" id="answer-7" class="answer">Airhome products are design and manufactured by Zenovia Electronics Inc. Please refer to the Zenovia One (1) Year Limited Warranty. <a href="https://www.zenoviaelectronics.com/legal/warranty/" style="color: rgb(252, 51, 243)">Learn more &gt;</a>
-                  </p>
+                  <p style="color: #888" id="answer-7" class="answer">Airhome products are design and manufactured by Zenovia Electronics Inc. Please refer to the Zenovia One (1) Year Limited Warranty. <a href="https://www.zenoviaelectronics.com/legal/warranty/" style="color: rgb(252, 51, 243)">Learn more ></a>.</p>
                 </div>
               </div>
             </div>
@@ -678,37 +627,37 @@ echo('  <option value="USD">Price in USD</option><option value="CAD">Price in CA
           </div>
           <nav class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-5 col-md-2">
             <ul>
-              <li><a href="http://twitter.com/airhomehq" target="_blank">@AirhomeHQ</a></li>
-              <li><a href="http://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
-              <li><a href="http://airhome.zendesk.com/" target="_blank">Support</a></li>
+              <li><a href="https://twitter.com/airhomehq" target="_blank">@AirhomeHQ</a></li>
+              <li><a href="https://airhomehq.tumblr.com/" target="_blank">Blog</a></li>
+              <li><a href="https://airhome.zendesk.com/" target="_blank">Support</a></li>
               <li><a href="https://airhome.typeform.com/to/fc6TVN" data-mode="1" target="_blank" class="typeform-share link">Contact Us</a></li>
               <li><a href="mailto:jimi@airhome.io">Jobs</a></li>
-              <li><a href="../brand-guidelines/">Brand Guidelines</a></li>
+              <li><a href="../brand-guidlines/">Brand Guidlines</a></li>
             </ul>
           </nav>
           <nav class="col-xs-offset-1 col-xs-11 col-sm-offset-2 col-sm-5 col-md-offset-0 col-md-2">
             <ul>
               <li><a href="https://itunes.apple.com/us/app/airhome/id587992467?mt=8" target="_blank">Airhome App</a></li>
-              <li><a href="../how-it-works/apps-airplay/">How to AirPlay</a></li>
-              <li> <a href="http://www.zenoviaelectronics.com/legal/warranty/" target="_blank">Warranty</a></li>
-              <li><a href="http://www.zenoviaelectronics.com/legal/privacy/" target="_blank">Privacy</a></li>
-              <li><a href="http://www.zenoviaelectronics.com/legal/privacy/" target="_blank">Terms of Service</a></li>
-              <li><a href="http://www.zenoviaelectronics.com/legal/patents/" target="_blank">Patents</a></li>
+              <li><a href="../apps-airplay/">How to AirPlay</a></li>
+              <li> <a href="https://www.zenoviaelectronics.com/legal/warranty/" target="_blank">Warranty</a></li>
+              <li><a href="https://www.zenoviaelectronics.com/legal/privacy/" target="_blank">Privacy</a></li>
+              <li><a href="https://www.zenoviaelectronics.com/legal/privacy/" target="_blank">Terms of Service</a></li>
+              <li><a href="https://www.zenoviaelectronics.com/legal/patents/" target="_blank">Patents</a></li>
             </ul>
           </nav>
           <nav class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-5 col-md-2">
             <ul>
-              <li><a href="../how-it-works/product-features/wall-mounting/">How to Install</a></li>
-              <li> <a href="../how-it-works/product-features/wiring-connections/">How to Wire</a></li>
-              <li><a href="../homebuilder-resources/why-airhome/">Home Builders</a></li>
+              <li><a href="../product-features/wall-mounting/">How to Install</a></li>
+              <li> <a href="../product-features/wiring-connections/">How to Wire</a></li>
+              <li><a href="../why-airhome/">Home Builders</a></li>
               <li><a href="https://airhome.typeform.com/to/PPwjef" data-mode="1" target="_blank" class="typeform-share link">Yacht Builders</a></li>
-              <li><a href="../homebuilder-resources/partner-program/wifi-commissioning/">Airhome Commissioning</a></li>
-              <li><a href="../homebuilder-resources/partner-program/">Partner Program</a></li>
+              <li><a href="../wifi-network/wifi-commissioning/">Airhome Commissioning</a></li>
+              <li><a href="../partner-programs/">Partner Program</a></li>
             </ul>
           </nav>
           <nav class="col-xs-offset-1 col-xs-11 col-sm-offset-2 col-sm-5 col-md-offset-0 col-md-2">
             <ul>
-              <form id="subscribeForm" action="http://zenovia.createsend.com/t/j/s/eldit/" method="post">
+              <form id="subscribeForm" action="https://zenovia.createsend.com/t/j/s/eldit/" method="post">
                 <input id="eldit-eldit" name="cm-eldit-eldit" placeholder="Join our mailing list" class="email-input">
                 <input id="submit" type="submit" value="Sign-up">
               </form>
@@ -717,11 +666,7 @@ echo('  <option value="USD">Price in USD</option><option value="CAD">Price in CA
         </div>
         <div class="row">
           <div class="col-xs-offset-1 col-xs-11 col-sm-offset-2 col-sm-10 col-md-offset-1 col-md-10">
-            <p class="footer-disclaimer">
-              *AirPlay works with iPhone, iPad, and iPod touch with iOS 4.3.3 or later, Mac with OS X Mountain Lion or later, Mac and PC with iTunes 10.2.2 or later. AirPlay, iPhone, iPad, iPod touch, Mac, iTunes, AirPort Extreme, Apple Watch and Apple TV are trademarks of Apple Inc., registered in the U.S. and other countries. The Wi-Fi CERTIFIED Logo is a certification mark of the Wi-Fi Alliance. Wi-Fi is a trademark of the Wi-Fi Alliance. Airhome is a trademark of Zenovia Electronics Inc.
-              
-            </p>
-            <p class="footer-disclaimer">#206, 26229 TWP 531A Acheson, AB T7X 5A4 | Tel. (780) 809-1089</p>
+            <p class="footer-disclaimer">*AirPlay works with iPhone, iPad, and iPod touch with iOS 4.3.3 or later, Mac with OS X Mountain Lion or later, Mac and PC with iTunes 10.2.2 or later. AirPlay, iPhone, iPad, iPod touch, Mac, iTunes, AirPort Extreme, Apple Watch and Apple TV are trademarks of Apple Inc., registered in the U.S. and other countries. The Wi-Fi CERTIFIED Logo is a certification mark of the Wi-Fi Alliance. Wi-Fi is a trademark of the Wi-Fi Alliance. Airhome is a trademark of Zenovia Electronics Inc.</p>
           </div>
         </div>
       </div>
@@ -742,4 +687,4 @@ echo('  <option value="USD">Price in USD</option><option value="CAD">Price in CA
       
     </script>
   </div>
-</body></html>
+</body></html>			
